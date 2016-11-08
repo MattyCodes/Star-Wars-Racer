@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Javascript Racer</title>
+<title>Star Wars Racer</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
@@ -12,11 +11,12 @@
 </head>
 <body>
   <div class="instructions">
-    <!-- <h1 class="race-intro"> Hello Racers! </h1> -->
     <img src="star-wars-logo.svg" class="star-wars-logo">
-    <p> Player One, you press 'Q' to move your character forward.
-    Player Two, you press 'P' to move your character forward.
-    The first player to reach the finish line wins! </p>
+    <p> Player One, you are fighting for The Rebel Alliance. 
+    You press 'Q' repeatedly to advance your ship. Player Two, you 
+    are battling for The Galactic Empire. You press 'P' to 
+    move your ship. The first ship to reach the finish is the winner!
+    </p>
     <form id="race-begin">
       <input type="submit" value="Begin" id="begin">
     </form>
@@ -57,17 +57,25 @@
 
   <div class="options" id="winner_one">
     <h1 class="winner-intro">
-    Congratulations Player One!
+    Victory for The Rebel Alliance!
     </h1>
-    <p> Would you like to play again? </p>
+    <p>
+    You have defeated The Empire's forces
+    and driven them back! Would you like to 
+    race again?
+    </p>
     <button id="yes"> Yes </button>
     <button id="no"> No </button>
   </div>
   <div class="options" id="winner_two">
     <h1 class="winner-intro">
-    Congratulations Player Two!
+    Victory for The Galactic Empire!
     </h1>
-    <p> Would you like to play again? </p>
+    <p>
+    You have defeated the Rebel scum
+    and driven them back! Would you like 
+    to race again?
+    </p>
     <button id="yes"> Yes </button>
     <button id="no"> No </button>
   </div>

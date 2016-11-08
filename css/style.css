@@ -42,29 +42,23 @@ td {
 	font-size: 27px;
 }
 
-.race-intro {
-	color: #ffd932;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 60px;
-	padding-top: 10px;
-	margin: 0;
-	padding-bottom: 0;
-}
-
 #begin {
+	margin-top: 15px;
 	color: #ffd932;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 45px;
-	font-weight: bold;
 	width: 220px;
 	height: 110px;
-	border: 1px solid black;
+	border: 1px solid #ffd932;
 	border-radius: 10px;
 	background: transparent;
 }
 
 #begin:hover {
-	font-size: 65px;
+	font-size: 50px;
+	width: 230px;
+	height: 120px;
+
 }
 
 button:focus {
@@ -75,11 +69,24 @@ button:focus {
 	background: transparent;
 	color: #ffd932;
 	display: none;
-	width: 500px;
+	width: 450px;
+	height: 450px;
 	margin: auto;
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 27px;
+}
+
+#winner_one, #winner_two {
+	background-size: 600px 600px;
+}
+
+#winner_one {
+	background: url(../rebel-logo.png) no-repeat;
+}
+
+#winner_two {
+	background: url(../empire-logo.png) no-repeat;
 }
 
 .winner-intro {
