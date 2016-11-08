@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Racer</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/script.js">
+</script>
+</head>
+<body>
+  <div class="instructions">
+    <h1 class="race-intro"> Hello Racers! </h1>
+    <p> Player One, you press 'Q' to move your character forward.
+    Player Two, you press 'P' to move your character forward.
+    The first player to reach the finish line wins! </p>
+    <form id="race-begin">
+      <input type="submit" value="Begin" id="begin">
+    </form>
+  </div>
+
+<!-- ============= Race Track ============= -->
+
+  <table class="racer_table">
+    <tr id="player1">
+      <td class="active"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="player2">
+      <td class="active"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+<!-- ============ Options ============ -->
+
+  <div class="options" id="winner_one">
+    <h1 class="winner-intro">
+    Congratulations Player One!
+    </h1>
+    <p> Would you like to play again? </p>
+    <button id="yes"> Yes </button>
+    <button id="no"> No </button>
+  </div>
+  <div class="options" id="winner_two">
+    <h1 class="winner-intro">
+    Congratulations Player Two!
+    </h1>
+    <p> Would you like to play again? </p>
+    <button id="yes"> Yes </button>
+    <button id="no"> No </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+	width: 100%;
+}
+
+.racer_table {
+  width: 800px;
+  height: 100px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.racer_table, tr, td {
+  border: 1px solid black;
+}
+
+#player1 > .active {
+  background-color: #43f27d;
+}
+
+#player2 > .active {
+  background-color: #f71a16;
+}
+
+.instructions {
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+	width: 500px;
+	height: 400px;
+	padding: 30px;
+	border: 1px solid black;
+	font-family: 'Poppins', sans-serif;
+	font-size: 27px;
+}
+
+.race-intro {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	padding-top: 10px;
+	margin: 0;
+	padding-bottom: 0;
+}
+
+#begin {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	width: 110px;
+	height: 70px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #58ef97;
+}
+
+button:focus {
+	outline: none;
+}
+
+.options {
+	display: none;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 27px;
+}
+
+.winner-intro {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	margin-top: 25px;
+}
+
+#yes {
+	width: 90px;
+	height: 90px;
+	border: 1px solid black;
+	border-radius: 360px;
+	background-color: #43f27d;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	margin: 15px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+#no {
+	width: 90px;
+	height: 90px;
+	border: 1px solid black;
+	border-radius: 360px;
+	background-color: #f71a16;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	margin: 15px;
+	margin-top: 5px;
+	font-weight: bold;
+}
