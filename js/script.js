@@ -22,13 +22,13 @@ var alertWinner = function() {
   // For Player One:
   var playerOneRow = $("#player1");
   var gridOne = $(playerOneRow).children();
-  if ( $( gridOne[19] ).hasClass( 'active' ) ) {
+  if ( $( gridOne[10] ).hasClass( 'active' ) ) {
     $("#winner_one").fadeIn(200);
   };
   // For Player Two:
   var playerTwoRow = $("#player2");
   var gridTwo = $(playerTwoRow).children();
-  if ( $( gridTwo[19] ).hasClass( 'active' ) ) {
+  if ( $( gridTwo[10] ).hasClass( 'active' ) ) {
     $("#winner_two").fadeIn(200);
   };
 };
@@ -39,7 +39,7 @@ var userInput = function() {
     var playerOne = $("#player1").children(".active");
     var gridTwo = $("#player2").children();
     var playerTwo = $("#player2").children(".active");
-    if ( $(gridOne).index(playerOne) == 19 || $(gridTwo).index(playerTwo) == 19 ) {
+    if ( $(gridOne).index(playerOne) == 10 || $(gridTwo).index(playerTwo) == 10 ) {
       console.log("The Game Has Ended.");
     } 
     else {
@@ -94,3 +94,4 @@ var buttonInput = function() {
     showInstructions();
   });
 };
+
