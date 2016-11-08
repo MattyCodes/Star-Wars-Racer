@@ -1,7 +1,7 @@
 body {
 	width: 100%;
 	height: 100vh;
-	background: url(../stars.jpg) no-repeat;
+	background: url(../images/stars.jpg) no-repeat;
 }
 
 .racer_table {
@@ -19,12 +19,12 @@ td {
 }
 
 #player1 > .active {
-  background: url(../x_wing.png);
+  background: url(../images/x_wing.png);
   background-size: 100px 100px;
 }
 
 #player2 > .active {
-	background: url(../tie_fighter.png);
+	background: url(../images/tie_fighter.png);
 	background-size: 100px 100px;
 }
 
@@ -82,11 +82,11 @@ button:focus {
 }
 
 #winner_one {
-	background: url(../rebel-logo.png) no-repeat;
+	background: url(../images/rebel-logo.png) no-repeat;
 }
 
 #winner_two {
-	background: url(../empire-logo.png) no-repeat;
+	background: url(../images/empire-logo.png) no-repeat;
 }
 
 .winner-intro {

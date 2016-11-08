@@ -19,13 +19,12 @@ var update_player_position = function(player) {
 };
 
 var alertWinner = function() {
-  // For Player One:
   var playerOneRow = $("#player1");
   var gridOne = $(playerOneRow).children();
   if ( $( gridOne[10] ).hasClass( 'active' ) ) {
     $("#winner_one").fadeIn(200);
+    playSound('player1');
   };
-  // For Player Two:
   var playerTwoRow = $("#player2");
   var gridTwo = $(playerTwoRow).children();
   if ( $( gridTwo[10] ).hasClass( 'active' ) ) {
@@ -67,8 +66,6 @@ var hideInstructions = function() {
     e.preventDefault();
     $(".instructions").hide();
     showTable();
-    // Optional Display Message.
-    // displayMessage();
   });
 };
 
@@ -102,9 +99,10 @@ var buttonInput = function() {
 var playSound = function(winner) {
   var sound = $("<embed autoplay='true' height='0' width='0'>");
   if (winner == 'player1') {
-    // append rebel - victory sound.
+    sound.attr('src', 'audio/rebel_theme.mp3');
+    $('body').append(sound);
   } else {
-    sound.attr('src', 'empire_theme.mp3');
+    sound.attr('src', 'audio/empire_theme.mp3');
     $('body').append(sound);
   };
 };
@@ -113,17 +111,3 @@ var endSound = function(winner) {
   var sound = $('embed');
   $(sound).remove();
 }
-
-// Optional Display Message "Get Ready!" To User. \\
-
-// var displayMessage = function() {
-//   $(".display_message").show();
-//   setTimeout(
-//     function() {
-//       $(".display_message").hide();
-//     }, 5000);
-//   setTimeout(
-//     function() {
-//       showTable();
-//     }, 5000);
-// };
