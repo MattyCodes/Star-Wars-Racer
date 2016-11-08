@@ -30,6 +30,7 @@ var alertWinner = function() {
   var gridTwo = $(playerTwoRow).children();
   if ( $( gridTwo[10] ).hasClass( 'active' ) ) {
     $("#winner_two").fadeIn(200);
+    playSound('player2');
   };
 };
 
@@ -64,9 +65,10 @@ var showTable = function() {
 var hideInstructions = function() {
   $("#race-begin").on( "submit", function(e) {
     e.preventDefault();
-    console.log("asdf")
     $(".instructions").hide();
     showTable();
+    // Optional Display Message.
+    // displayMessage();
   });
 };
 
@@ -85,13 +87,43 @@ var resetTable = function() {
 var buttonInput = function() {
   $("body").on( "click", "#yes", function() {
     $(".options").fadeOut(200);
+    endSound();
     resetTable();
   });
   $("body").on( "click", "#no", function() {
     $(".options").hide();
+    endSound();
     resetTable();
     hideTable();
     showInstructions();
   });
 };
 
+var playSound = function(winner) {
+  var sound = $("<embed autoplay='true' height='0' width='0'>");
+  if (winner == 'player1') {
+    // append rebel - victory sound.
+  } else {
+    sound.attr('src', 'empire_theme.mp3');
+    $('body').append(sound);
+  };
+};
+
+var endSound = function(winner) {
+  var sound = $('embed');
+  $(sound).remove();
+}
+
+// Optional Display Message "Get Ready!" To User. \\
+
+// var displayMessage = function() {
+//   $(".display_message").show();
+//   setTimeout(
+//     function() {
+//       $(".display_message").hide();
+//     }, 5000);
+//   setTimeout(
+//     function() {
+//       showTable();
+//     }, 5000);
+// };
